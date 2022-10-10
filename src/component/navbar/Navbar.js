@@ -11,7 +11,7 @@ const Navbar = () => {
 		</Link>
 	<ul className="items-stretch hidden space-x-3 md:flex">
 		<li className="flex">
-			<Link rel="noopener noreferrer" to="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</Link>
+			<Link rel="noopener noreferrer" to="/" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Home</Link>
 		</li>
 		<li className="flex">
 			<Link rel="noopener noreferrer" to="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Link</Link>
@@ -20,7 +20,7 @@ const Navbar = () => {
 			<Link rel="noopener noreferrer" to="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent text-violet-400 border-violet-400">Link</Link>
 		</li>
 		<li className="flex">
-			<Link rel="noopener noreferrer" to="#" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Blog</Link>
+			<Link rel="noopener noreferrer" to="/blog" className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Blog</Link>
 		</li>
 	</ul>
 	<button className="flex justify-end p-4 md:hidden">

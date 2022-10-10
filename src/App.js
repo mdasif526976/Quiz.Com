@@ -1,19 +1,24 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blog from './component/Blog/Blog';
 import Main from './component/main/Main';
-import Navbar from './component/navbar/Navbar';
 const router = createBrowserRouter([
     {
       path:'/',
-      element:<Main></Main>
+      element:<Main></Main>,
+      children:[
+        {
+          path:'/blog',
+          element:<Blog></Blog>
+        }
+      ]
     }
 ])
 function App() {
   return (
     <div className="App">
          <RouterProvider router={router} >
-         <h1>adhudhu</h1>
-          <Navbar></Navbar>
+      
           </RouterProvider> 
           
     </div>
