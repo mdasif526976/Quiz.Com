@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Mainpage from '../About/Mainpage';
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,7 +65,7 @@ const Navbar = () => {
 			</li>
 			<li>
 			  <Link
-				to="/"
+				to="/about"
 				aria-label="About us"
 				title="About us"
 				class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -177,7 +178,7 @@ const Navbar = () => {
 					  </li>
 					  <li>
 						<Link
-						  to="/"
+						  to="/about"
 						  aria-label="About us"
 						  title="About us"
 						  class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -193,6 +194,7 @@ const Navbar = () => {
 			)}
 		  </div>
 		</div>
+		<Mainpage></Mainpage>
 	  </div>
 	);
   };

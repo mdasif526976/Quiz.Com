@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import About from './component/About/About';
 import Blog from './component/Blog/Blog';
 import Error from './component/error/Error';
 import Home from './component/Home/Home';
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         loader:async () => {
           return fetch("https://openapi.programming-hero.com/api/quiz/");
         },
+      },
+      {
+        path:'/about',
+        element:<About></About>
       }
       ]
     },
