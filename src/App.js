@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './component/Blog/Blog';
+import Error from './component/error/Error';
 import Home from './component/Home/Home';
 import Main from './component/main/Main';
 const router = createBrowserRouter([
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
         },
       }
       ]
+    },
+
+    {
+      path:"*",
+      element:<Error></Error>
     }
 ])
 function App() {
