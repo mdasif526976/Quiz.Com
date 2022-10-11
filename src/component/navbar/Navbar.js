@@ -35,7 +35,7 @@ const Navbar = () => {
 		  <ul class="flex items-center hidden space-x-8 lg:flex">
 			<li>
 			  <Link
-				to="/home"
+				to="/"
 				aria-label="Our Home"
 				title="Our Home"
 				class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -148,7 +148,7 @@ const Navbar = () => {
 					<ul class="space-y-4">
 					  <li>
 						<Link
-						  to="/home"
+						  to="/"
 						  aria-label="Our Home"
 						  title="Our Home"
 						  class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -194,7 +194,7 @@ const Navbar = () => {
 			)}
 		  </div>
 		</div>
-		<Mainpage></Mainpage>
+		
 	  </div>
 	);
   };
