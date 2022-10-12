@@ -11,7 +11,7 @@ const Question = (props) => {
     const [error,Seterror] = useContext(ErrorContext);
     // ------------------show toast -------------------
     const wrongToast =()=>{
-        toast.error('Your anwser is wrong XX', {
+        toast.error('Your anwser is wrong X', {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -46,8 +46,8 @@ const Question = (props) => {
       }
     }
     return (
-        <div className='mt-4'>
-            <div className='flex justify-center gap-5'>
+        <div className='mt-4 text-xs ml-3'>
+            <div className='flex justify-center md:justify-center xl:justify-center '>
                 <h1>{question}</h1>
                 
                <ToastContainer>
@@ -57,7 +57,7 @@ const Question = (props) => {
             </div>
             <div>
         
-        <p className='text-xl'>Choose your preferred option</p>
+        <p className='text-sm'>Choose your preferred option</p>
                 </div>  
       {
          options.map(option => <CreateOption btn={showtoast} correctAnswer={correctAnswer} key={id} option={option}></CreateOption>)
