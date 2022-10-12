@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import CreateOption from '../create option/CreateOption';
+import { ErrorContext } from '../main/Main';
 const Question = (props) => {
     const {id,question,correctAnswer,options} = props.question;
-    // show toast 
+    //------------------ error counter --------------------
+    const [error,Seterror] = useContext(ErrorContext);
+    // ------------------show toast -------------------
     const wrongToast =()=>{
         toast.error('Your anwser is wrong XX', {
             position: "top-right",
@@ -39,6 +42,7 @@ const Question = (props) => {
       }
       else{
         wrongToast();
+        Seterror(error+1)
       }
     }
     return (
@@ -53,7 +57,7 @@ const Question = (props) => {
             </div>
             <div>
         
-        <p className='text-2xl'>Choose your preferred option</p>
+        <p className='text-xl'>Choose your preferred option</p>
                 </div>  
       {
          options.map(option => <CreateOption btn={showtoast} correctAnswer={correctAnswer} key={id} option={option}></CreateOption>)
