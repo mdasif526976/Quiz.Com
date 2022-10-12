@@ -52,7 +52,7 @@ const Question = (props) => {
                 
                <ToastContainer>
                </ToastContainer>
-               <FontAwesomeIcon onClick={notify} className='text-white' icon={faEye}></FontAwesomeIcon>
+               <FontAwesomeIcon onClick={notify} icon={faEye}></FontAwesomeIcon>
                 
             </div>
             <div>
