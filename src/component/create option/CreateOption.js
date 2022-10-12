@@ -4,7 +4,7 @@ const CreateOption = (props) => {
 
 
     return (
-        <div className='md:grid grid-cols-1 '>       
+        <div className='bg-green-100 w-full rounded flex'>       
 <label for={option}>{option}</label>
 <input onClick={() => btn({option,correctAnswer})} type="radio" key={key} name="contact" value={option}/>
  

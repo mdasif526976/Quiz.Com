@@ -46,8 +46,8 @@ const Question = (props) => {
       }
     }
     return (
-        <div className='mt-4 text-xs mx-2'>
-            <div className='flex justify-center md:justify-center xl:justify-center '>
+        <div className='mt-4 text-xs mx-2 bg-green-50 text-black rounded'>
+            <div className='flex justify-center md:justify-center xl:justify-center text-xl'>
                 <h1>{question}</h1>
                 
                <ToastContainer>
@@ -57,13 +57,15 @@ const Question = (props) => {
             </div>
             <div>
         
-        <p className='text-sm'>Choose your preferred option</p>
+        <p className='text-xl '>Choose your preferred option</p>
                 </div>  
-      <div className=''>
+    <div className='p-14'>
+    <div className='flex flex-col text-center gap-14'>
       {
          options.map(option => <CreateOption btn={showtoast} correctAnswer={correctAnswer} key={id} option={option}></CreateOption>)
      }
       </div>
+    </div>
                                
         </div>
     );
