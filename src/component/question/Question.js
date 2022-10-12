@@ -46,7 +46,7 @@ const Question = (props) => {
       }
     }
     return (
-        <div className='mt-4 text-xs ml-3'>
+        <div className='mt-4 text-xs mx-2'>
             <div className='flex justify-center md:justify-center xl:justify-center '>
                 <h1>{question}</h1>
                 
@@ -59,9 +59,11 @@ const Question = (props) => {
         
         <p className='text-sm'>Choose your preferred option</p>
                 </div>  
+      <div className=''>
       {
          options.map(option => <CreateOption btn={showtoast} correctAnswer={correctAnswer} key={id} option={option}></CreateOption>)
      }
+      </div>
                                
         </div>
     );

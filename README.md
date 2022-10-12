@@ -14,30 +14,30 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+# The name of my project name is (Quiz.Com)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Quiz.com is specialy made for Lern. If a user come there he can lern 
+many question of Interview. 
 
-### `npm run build`
+# Feature
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### No:1. 5 special content for you (react,css,html,github,javascript) etc.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### No:2. You can quiz exam in there.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### No:3. if you press correct answer then come a green toast else
+come a red toast .
+## Installation
 
-### `npm run eject`
+ this project we install (React toastefy ,Tailwind -Css , React ,React-Router etc.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+$ npx create-react-app my-app
+cd my-app
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## My Profile
+### https://github.com/mdasif526976
