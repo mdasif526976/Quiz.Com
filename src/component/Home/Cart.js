@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
        const {id,name,logo} = props.cart;
@@ -11,7 +12,7 @@ const Cart = (props) => {
 			<h2 className="text-3xl font-semibold tracking-wide">{name}</h2>
 			<p className="dark:text-gray-100">Curabitur luctus erat nunc, sed ullamcorper erat vestibulum eget.</p>
 		</div>
-		<button type="button" className="bg-blue-500 flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 text-white">Start Quiz</button>
+		<Link to={`/quiz/${id}`} className="bg-blue-500 flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-400 text-white">Start Quiz</Link>
 	</div>
 </div>
         </div>
